@@ -18,7 +18,6 @@ def index(request):
 
 class ManufacturerListView(generic.ListView):
     model = Manufacturer
-    # queryset = Manufacturer.objects.select_related("name")
     paginate_by = 5
     ordering = ["name"]
 
